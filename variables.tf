@@ -9,3 +9,7 @@ variable "datadog_api_key" {
 variable "datadog_site" {
   default = "datadoghq.com"
 }
+variable "instance_ids" {
+  description = "List of EC2 instance IDs to tag with Datadog=Enabled"
+  type        = list(string)
+}
